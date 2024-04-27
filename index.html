@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Tarun's Garage</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+background-color: #333;
+padding: 30px;
+text-align: center;
+font-size: 35px;
+color: white;
+}
+
+/* Navigation Menu */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+/* Navigation links */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Highlight current page */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Car Models Section */
+.carmodels {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/* Individual Car Model */
+.carmodel {
+background-color: #f1f1f1;
+width: 300px;
+margin: 20px;
+padding: 20px;
+text-align: center;
+}
+
+/* Form */
+form {
+width: 400px;
+margin: auto;
+padding: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+}
+
+input, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+}
+
+/* Submit Button */
+input[type=submit] {
+background-color: #333;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Copyright */
+.copyright {
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>Tarun's Garage</h1>
+</div>
+
+<div class="topnav">
+<a href="#">Home</a>
+<a href="#">Cars for Rent</a>
+<a href="#">Cars for Sale</a>
+<a href="#">Contact</a>
+</div>
+
+<h2>Featured Car Models</h2>
+
+<div class="carmodels">
+
+<div class="carmodel">
+<img src="tesla.jpg">
+<h3>Tesla Model X</h3>
+<p>Price: $120/day</p>
+</div>
+
+<div class="carmodel">
+<img src="bmw.jpg">
+<h3>BMW M5</h3>
+<p>Price: $150/day</p>
+</div>
+
+<div class="carmodel">
+<img src="mercedes.jpg">
+<h3>Mercedes S-Class</h3>
+<p>Price: $200/day</p>
+</div>
+
+</div>
+
+<h2>Request a Car Model</h2>
+
+<form>
+<label for="model">Car Model:</label>
+<input type="text" id="model" name="model"><br><br>
+
+<label for="message">Additional Details:</label>
+<textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+<input type="submit" value="Submit">
+</form>
+
+<p>Do you want the cars for rent or for sale?</p>
+<script>
+function carType() {
+let type = prompt("Enter R for rent or S for sale");
+if (type == "R" || type == "r") {
+alert("You want the cars for rent");
+} else if (type == "S" || type == "s") {
+alert("You want the cars for sale");
+} else {
+alert("Please enter a valid option");
+}
+}
+carType();
+</script>
+
+<p>Contact: 555-123-4567</p>
+<p>Address
